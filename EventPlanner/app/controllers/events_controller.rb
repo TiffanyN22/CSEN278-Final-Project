@@ -5,9 +5,8 @@ class EventsController < ApplicationController
 
   # GET /events or /events.json
   def index
-    @events = Event.all
-    @organizedEvents = current_user.organized_events
-    @registeredEvents = current_user.registrations
+    @upcoming_new_events = Event.upcoming.where.not(organizer: current_user)
+                                         .where.not(id: current_user.attended_events.select(:id))
   end
 
   # GET /events/1 or /events/1.json

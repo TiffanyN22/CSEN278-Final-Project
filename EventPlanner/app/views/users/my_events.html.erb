@@ -1,0 +1,47 @@
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "My Events" %>
+
+<h1>Upcoming Organized Events</h1>
+<div id="upcoming-organized-events">
+  <% if @upcoming_organized_events.any? %>
+    <% @upcoming_organized_events.each do |event| %>
+      <%= render event %>
+      <div><%= link_to "Show this event", event %></div>
+    <% end %>
+  <% else %>
+    <div>You have no upcoming organized events.</div>
+  <% end %>
+</div>
+<br/>
+<%= link_to "Make a new event", new_event_path %>
+
+<hr>
+
+<h1>Upcoming Registered Events</h1>
+<div id="upcoming-registered-events">
+  <% if @upcoming_registered_events.any? %>
+    <% @upcoming_registered_events.each do |event| %>
+      <%= render event %>
+      <div><%= link_to "Show this event", event %></div>
+    <% end %>
+  <% else %>
+    <div>You aren't registered for any upcoming events.</div>
+  <% end %>
+</div>
+<br/>
+<%= link_to "Register for a new event", events_path %>
+
+<hr>
+
+<h1>Past Events</h1>
+<div id="past-events">
+  <% if @past_events.any? %>
+    <% @past_events.each do |event| %>
+      <%= render event %>
+      <div> <%= link_to "Show this event", event %> </div>
+    <% end %>
+  <% else %>
+    <p>No past events yet.</p>
+  <% end %>
+</div>

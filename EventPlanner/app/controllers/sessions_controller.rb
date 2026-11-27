@@ -8,7 +8,7 @@ class SessionsController < ApplicationController
     # authenticate
     if user && user.authenticate(params[:password])
       session[:user_id] = user.id
-      redirect_to events_path, notice: "Logged in successfully!"
+      redirect_to my_events_path, notice: "Logged in successfully!"
     else
       flash.now[:alert] = "Invalid username or password"
       render :new, status: :unprocessable_entity

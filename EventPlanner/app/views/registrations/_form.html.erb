@@ -2,7 +2,6 @@
   <% if registration.errors.any? %>
     <div style="color: red">
       <h2><%= pluralize(registration.errors.count, "error") %> prohibited this registration from being saved:</h2>
-
       <ul>
         <% registration.errors.each do |error| %>
           <li><%= error.full_message %></li>
@@ -11,22 +10,21 @@
     </div>
   <% end %>
 
+  <p>
+    <strong>Your Name:</strong> <%= current_user.username %>
+  </p>
+
+  <p>
+    <strong>Event:</strong> <%= registration.event&.name %>
+    <%= form.hidden_field :event_id %>
+  </p>
+
   <div>
-    <%= form.label :user_id, style: "display: block" %>
-    <%= form.text_field :user_id %>
+    <%= form.label "Leave an optional note for the organizers:", style: "display: block" %>
+    <%= form.text_area :notes %>
   </div>
 
   <div>
-    <%= form.label :event_id, style: "display: block" %>
-    <%= form.text_field :event_id %>
-  </div>
-
-  <div>
-    <%= form.label :notes, style: "display: block" %>
-    <%= form.textarea :notes %>
-  </div>
-
-  <div>
-    <%= form.submit %>
+    <%= form.submit "Complete Registration" %>
   </div>
 <% end %>

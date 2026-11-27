@@ -13,7 +13,7 @@ class RegistrationsController < ApplicationController
 
   # GET /registrations/new
   def new
-    @registration = Registration.new
+    @registration = current_user.registrations.build(event_id: params[:event_id])
   end
 
   # GET /registrations/1/edit
@@ -22,16 +22,12 @@ class RegistrationsController < ApplicationController
 
   # POST /registrations or /registrations.json
   def create
-    @registration = Registration.new(registration_params)
+    @registration = current_user.registrations.build(registration_params)
 
-    respond_to do |format|
-      if @registration.save
-        format.html { redirect_to @registration, notice: "Registration was successfully created." }
-        format.json { render :show, status: :created, location: @registration }
-      else
-        format.html { render :new, status: :unprocessable_content }
-        format.json { render json: @registration.errors, status: :unprocessable_content }
-      end
+    if @registration.save
+      redirect_to my_events_path, notice: "Successfully registered for #{@registration.event.name}!"
+    else
+      render :new, status: :unprocessable_entity
     end
   end
 

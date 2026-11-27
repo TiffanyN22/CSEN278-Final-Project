@@ -3,4 +3,7 @@ class Event < ApplicationRecord
   belongs_to :category, optional: true
   has_many :registrations, dependent: :destroy
   has_many :comments, dependent: :destroy
+
+  scope :upcoming, -> { where("date >= ?", Time.current).order(date: :asc) }
+  scope :past, -> { where("date < ?", Time.current).order(date: :desc) }
 end
