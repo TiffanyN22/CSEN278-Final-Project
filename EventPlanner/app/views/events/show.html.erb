@@ -1,6 +1,12 @@
 <p style="color: green"><%= notice %></p>
 
 <div id="<%= dom_id @event %>">
+  <% if @event.preview_img.attached? %>
+    <div>
+      <%= image_tag @event.preview_img, style: "max-width: 500px; height: auto;" %>
+    </div>
+  <% end %>
+  
   <div>
     <strong>Name:</strong>
     <%= @event.name %>
@@ -19,11 +25,6 @@
   <div>
     <strong>Location:</strong>
     <%= @event.location %>
-  </div>
-
-  <div>
-    <strong>Preview img:</strong>
-    <%= @event.preview_img %>
   </div>
 
   <div>
