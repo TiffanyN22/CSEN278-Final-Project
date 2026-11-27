@@ -3,11 +3,51 @@
 <% content_for :title, "Events" %>
 
 <h1>Find New Events</h1>
+<h2>Filters:</h2>
+
+<%= form_with url: events_path, method: :get, local: true do |f| %>
+  <div>
+    <%= f.label :query, "Event name" %>
+    <%= f.text_field :query, value: params[:query] %>
+  </div>
+
+  <fieldset>
+    <legend>Categories</legend>
+    <% Category.order(:name).each do |category| %>
+      <div>
+        <%= check_box_tag "category_ids[]", category.id,
+              Array(params[:category_ids]).map(&:to_s).include?(category.id.to_s),
+              id: "category_#{category.id}" %>
+        <%= label_tag "category_#{category.id}", category.name %>
+      </div>
+    <% end %>
+  </fieldset>
+
+  <div>
+    <%= f.label :from_date, "From" %>
+    <%= f.date_field :from_date, value: params[:from_date] %>
+
+    <%= f.label :to_date, "To" %>
+    <%= f.date_field :to_date, value: params[:to_date] %>
+  </div>
+
+  <div>
+    <%= f.submit "Search" %>
+    <%= link_to "Clear", events_path %>
+  </div>
+<% end %>
+
+<h2>Events:</h2>
+
 <div id="events">
+  <% if @upcoming_new_events.empty? %>
+    <p>No events match your search.</p>
+  <% end %>
+
   <% @upcoming_new_events.each do |event| %>
     <%= render event %>
     <p>
-      <%= link_to "View event details", event %> 
+      <%= link_to "View event details", event %>
       <br/>
       <%= link_to "Register for event", new_registration_path(event_id: event.id) %>
     </p>

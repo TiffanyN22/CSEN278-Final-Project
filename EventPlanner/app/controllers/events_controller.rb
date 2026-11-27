@@ -5,8 +5,28 @@ class EventsController < ApplicationController
 
   # GET /events or /events.json
   def index
-    @upcoming_new_events = Event.upcoming.where.not(organizer: current_user)
-                                         .where.not(id: current_user.attended_events.select(:id))
+    @upcoming_new_events = Event.upcoming.where.not(organizer: current_user).where.not(id: current_user.attended_events.select(:id))
+
+    # apply filters
+    if params[:query].present?
+      @upcoming_new_events = @upcoming_new_events.where(
+        "events.name LIKE ?", "%#{Event.sanitize_sql_like(params[:query])}%"
+      )
+    end
+
+    if params[:category_ids].present?
+      @upcoming_new_events = @upcoming_new_events.where(category_id: params[:category_ids])
+    end
+
+    if params[:from_date].present?
+      from = Date.parse(params[:from_date]) rescue nil
+      @upcoming_new_events = @upcoming_new_events.where("events.date >= ?", from.beginning_of_day) if from
+    end
+
+    if params[:to_date].present?
+      to = Date.parse(params[:to_date]) rescue nil
+      @upcoming_new_events = @upcoming_new_events.where("events.date <= ?", to.end_of_day) if to
+    end
   end
 
   # GET /events/1 or /events/1.json
