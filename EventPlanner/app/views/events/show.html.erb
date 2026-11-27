@@ -6,7 +6,7 @@
       <%= image_tag @event.preview_img, style: "max-width: 500px; height: auto;" %>
     </div>
   <% end %>
-  
+
   <div>
     <strong>Name:</strong>
     <%= @event.name %>
@@ -40,8 +40,10 @@
 </div>
 
 <div>
-  <%= link_to "Edit this event", edit_event_path(@event) %> |
-  <%= link_to "Back to events", events_path %>
+  <% if logged_in? && @event.organizer == current_user %>
+    <%= link_to "Edit this event", edit_event_path(@event) %>
+    <%= button_to "Destroy this event", @event, method: :delete %>
+  <% end %>
 
-  <%= button_to "Destroy this event", @event, method: :delete %>
+  <%= link_to "Back to events", events_path %>
 </div>

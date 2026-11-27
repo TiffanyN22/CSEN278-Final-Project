@@ -90,4 +90,11 @@ class EventsController < ApplicationController
     def event_params
       params.expect(event: [ :name, :description, :date, :location, :preview_img, :category_id ])
     end
+
+    # only allow an event's organizer to modify or delete it
+    def authorize_organizer
+      unless @event.organizer == current_user
+        redirect_to events_path, alert: "You are not authorized to modify this event."
+      end
+    end
 end
