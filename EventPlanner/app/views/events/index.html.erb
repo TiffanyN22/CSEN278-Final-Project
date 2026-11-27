@@ -2,15 +2,24 @@
 
 <% content_for :title, "Events" %>
 
-<h1>Events</h1>
-
+<h1>Your Events</h1>
 <div id="events">
-  <% @events.each do |event| %>
+  <% @organizedEvents.each do |event| %>
     <%= render event %>
     <p>
       <%= link_to "Show this event", event %>
     </p>
   <% end %>
 </div>
+<%= link_to "Make a new event", new_event_path %>
 
-<%= link_to "New event", new_event_path %>
+<h1>Registered Events</h1>
+<div id="events">
+  <% @registeredEvents.each do |event| %>
+    <%= render event %>
+    <p>
+      <%= link_to "Show this event", event %>
+    </p>
+  <% end %>
+</div>
+<%= link_to "Register for a new event", new_event_path %>

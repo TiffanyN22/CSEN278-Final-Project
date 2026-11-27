@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.1].define(version: 2026_11_27_074741) do
+ActiveRecord::Schema[8.1].define(version: 2026_11_27_082446) do
   create_table "categories", force: :cascade do |t|
     t.string "name", null: false
     t.text "description"
@@ -37,7 +37,7 @@ ActiveRecord::Schema[8.1].define(version: 2026_11_27_074741) do
     t.string "location", null: false
     t.string "preview_img"
     t.integer "organizer_id", null: false
-    t.integer "category_id", null: false
+    t.integer "category_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["category_id"], name: "index_events_on_category_id"
@@ -68,7 +68,7 @@ ActiveRecord::Schema[8.1].define(version: 2026_11_27_074741) do
   add_foreign_key "comments", "events"
   add_foreign_key "comments", "users"
   add_foreign_key "events", "categories"
-  add_foreign_key "events", "user", column: "organizer_id"
+  add_foreign_key "events", "users", column: "organizer_id"
   add_foreign_key "registrations", "events"
   add_foreign_key "registrations", "users"
 end
