@@ -1,0 +1,29 @@
+current directory: /Users/tiffanynguyen/Downloads/tagged/SCU/Fall 2026/CSEN 278/CSEN278-Final-Project/EventPlanner/vendor/bundle/ruby/4.0.0/gems/json-3.2.0/ext/json/ext/parser
+/opt/homebrew/opt/ruby/bin/ruby extconf.rb
+checking for rb_enc_interned_str() in ruby/encoding.h... yes
+checking for rb_str_to_interned_str() in ruby.h... yes
+checking for rb_hash_new_capa() in ruby.h... yes
+checking for rb_hash_bulk_insert() in ruby.h... yes
+checking for ruby_xfree_sized() in ruby.h... no
+checking for x86intrin.h... no
+checking for intrin.h... no
+checking for RUBY_TYPED_EMBEDDABLE in ruby.h... yes
+checking for whether -std=c99 is accepted as CFLAGS... yes
+checking for whether -mno-outline is accepted as CFLAGS... yes
+checking for arm_neon.h... yes
+creating Makefile
+
+current directory: /Users/tiffanynguyen/Downloads/tagged/SCU/Fall 2026/CSEN 278/CSEN278-Final-Project/EventPlanner/vendor/bundle/ruby/4.0.0/gems/json-3.2.0/ext/json/ext/parser
+make -j3 DESTDIR\= sitearchdir\=./.gem.20261126-78490-6adomj sitelibdir\=./.gem.20261126-78490-6adomj clean
+
+current directory: /Users/tiffanynguyen/Downloads/tagged/SCU/Fall 2026/CSEN 278/CSEN278-Final-Project/EventPlanner/vendor/bundle/ruby/4.0.0/gems/json-3.2.0/ext/json/ext/parser
+make -j3 DESTDIR\= sitearchdir\=./.gem.20261126-78490-6adomj sitelibdir\=./.gem.20261126-78490-6adomj
+compiling parser.c
+linking shared-object json/ext/parser.bundle
+
+current directory: /Users/tiffanynguyen/Downloads/tagged/SCU/Fall 2026/CSEN 278/CSEN278-Final-Project/EventPlanner/vendor/bundle/ruby/4.0.0/gems/json-3.2.0/ext/json/ext/parser
+make -j3 DESTDIR\= sitearchdir\=./.gem.20261126-78490-6adomj sitelibdir\=./.gem.20261126-78490-6adomj install
+/usr/bin/install -c -m 0755 parser.bundle ./.gem.20261126-78490-6adomj/json/ext
+
+current directory: /Users/tiffanynguyen/Downloads/tagged/SCU/Fall 2026/CSEN 278/CSEN278-Final-Project/EventPlanner/vendor/bundle/ruby/4.0.0/gems/json-3.2.0/ext/json/ext/parser
+make DESTDIR\= sitearchdir\=./.gem.20261126-78490-6adomj sitelibdir\=./.gem.20261126-78490-6adomj clean

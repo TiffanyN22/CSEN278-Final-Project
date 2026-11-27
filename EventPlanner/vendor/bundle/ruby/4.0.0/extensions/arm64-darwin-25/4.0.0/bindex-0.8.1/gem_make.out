@@ -1,0 +1,18 @@
+current directory: /Users/tiffanynguyen/Downloads/tagged/SCU/Fall 2026/CSEN 278/CSEN278-Final-Project/EventPlanner/vendor/bundle/ruby/4.0.0/gems/bindex-0.8.1/ext/skiptrace
+/opt/homebrew/opt/ruby/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/tiffanynguyen/Downloads/tagged/SCU/Fall 2026/CSEN 278/CSEN278-Final-Project/EventPlanner/vendor/bundle/ruby/4.0.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= sitearchdir\=./.gem.20261126-78490-80jzj5 sitelibdir\=./.gem.20261126-78490-80jzj5 clean
+
+current directory: /Users/tiffanynguyen/Downloads/tagged/SCU/Fall 2026/CSEN 278/CSEN278-Final-Project/EventPlanner/vendor/bundle/ruby/4.0.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= sitearchdir\=./.gem.20261126-78490-80jzj5 sitelibdir\=./.gem.20261126-78490-80jzj5
+compiling cruby.c
+linking shared-object skiptrace/internal/cruby.bundle
+
+current directory: /Users/tiffanynguyen/Downloads/tagged/SCU/Fall 2026/CSEN 278/CSEN278-Final-Project/EventPlanner/vendor/bundle/ruby/4.0.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= sitearchdir\=./.gem.20261126-78490-80jzj5 sitelibdir\=./.gem.20261126-78490-80jzj5 install
+/usr/bin/install -c -m 0755 cruby.bundle ./.gem.20261126-78490-80jzj5/skiptrace/internal
+
+current directory: /Users/tiffanynguyen/Downloads/tagged/SCU/Fall 2026/CSEN 278/CSEN278-Final-Project/EventPlanner/vendor/bundle/ruby/4.0.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= sitearchdir\=./.gem.20261126-78490-80jzj5 sitelibdir\=./.gem.20261126-78490-80jzj5 clean

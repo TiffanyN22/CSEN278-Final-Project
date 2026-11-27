@@ -1,0 +1,31 @@
+current directory: /Users/tiffanynguyen/Downloads/tagged/SCU/Fall 2026/CSEN 278/CSEN278-Final-Project/EventPlanner/vendor/bundle/ruby/4.0.0/gems/ed25519-1.4.0/ext/ed25519_ref10
+/opt/homebrew/opt/ruby/bin/ruby extconf.rb
+checking for whether -Wall is accepted as CFLAGS... yes
+checking for whether -O3 is accepted as CFLAGS... yes
+checking for whether -pedantic is accepted as CFLAGS... no
+checking for whether -std=c99 is accepted as CFLAGS... yes
+creating Makefile
+
+current directory: /Users/tiffanynguyen/Downloads/tagged/SCU/Fall 2026/CSEN 278/CSEN278-Final-Project/EventPlanner/vendor/bundle/ruby/4.0.0/gems/ed25519-1.4.0/ext/ed25519_ref10
+make DESTDIR\= sitearchdir\=./.gem.20261126-78490-2e20zt sitelibdir\=./.gem.20261126-78490-2e20zt clean
+
+current directory: /Users/tiffanynguyen/Downloads/tagged/SCU/Fall 2026/CSEN 278/CSEN278-Final-Project/EventPlanner/vendor/bundle/ruby/4.0.0/gems/ed25519-1.4.0/ext/ed25519_ref10
+make DESTDIR\= sitearchdir\=./.gem.20261126-78490-2e20zt sitelibdir\=./.gem.20261126-78490-2e20zt
+compiling ed25519_ref10.c
+compiling fe.c
+compiling ge.c
+compiling keypair.c
+compiling open.c
+compiling sc_muladd.c
+compiling sc_reduce.c
+compiling sha512.c
+compiling sign.c
+compiling verify.c
+linking shared-object ed25519_ref10.bundle
+
+current directory: /Users/tiffanynguyen/Downloads/tagged/SCU/Fall 2026/CSEN 278/CSEN278-Final-Project/EventPlanner/vendor/bundle/ruby/4.0.0/gems/ed25519-1.4.0/ext/ed25519_ref10
+make DESTDIR\= sitearchdir\=./.gem.20261126-78490-2e20zt sitelibdir\=./.gem.20261126-78490-2e20zt install
+/usr/bin/install -c -m 0755 ed25519_ref10.bundle ./.gem.20261126-78490-2e20zt
+
+current directory: /Users/tiffanynguyen/Downloads/tagged/SCU/Fall 2026/CSEN 278/CSEN278-Final-Project/EventPlanner/vendor/bundle/ruby/4.0.0/gems/ed25519-1.4.0/ext/ed25519_ref10
+make DESTDIR\= sitearchdir\=./.gem.20261126-78490-2e20zt sitelibdir\=./.gem.20261126-78490-2e20zt clean

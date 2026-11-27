@@ -1,0 +1,18 @@
+current directory: /Users/tiffanynguyen/Downloads/tagged/SCU/Fall 2026/CSEN 278/CSEN278-Final-Project/EventPlanner/vendor/bundle/ruby/4.0.0/gems/websocket-driver-0.9.1/ext/websocket-driver
+/opt/homebrew/opt/ruby/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/tiffanynguyen/Downloads/tagged/SCU/Fall 2026/CSEN 278/CSEN278-Final-Project/EventPlanner/vendor/bundle/ruby/4.0.0/gems/websocket-driver-0.9.1/ext/websocket-driver
+make -j3 DESTDIR\= sitearchdir\=./.gem.20261126-78490-omjet sitelibdir\=./.gem.20261126-78490-omjet clean
+
+current directory: /Users/tiffanynguyen/Downloads/tagged/SCU/Fall 2026/CSEN 278/CSEN278-Final-Project/EventPlanner/vendor/bundle/ruby/4.0.0/gems/websocket-driver-0.9.1/ext/websocket-driver
+make -j3 DESTDIR\= sitearchdir\=./.gem.20261126-78490-omjet sitelibdir\=./.gem.20261126-78490-omjet
+compiling websocket_mask.c
+linking shared-object websocket_mask.bundle
+
+current directory: /Users/tiffanynguyen/Downloads/tagged/SCU/Fall 2026/CSEN 278/CSEN278-Final-Project/EventPlanner/vendor/bundle/ruby/4.0.0/gems/websocket-driver-0.9.1/ext/websocket-driver
+make -j3 DESTDIR\= sitearchdir\=./.gem.20261126-78490-omjet sitelibdir\=./.gem.20261126-78490-omjet install
+/usr/bin/install -c -m 0755 websocket_mask.bundle ./.gem.20261126-78490-omjet
+
+current directory: /Users/tiffanynguyen/Downloads/tagged/SCU/Fall 2026/CSEN 278/CSEN278-Final-Project/EventPlanner/vendor/bundle/ruby/4.0.0/gems/websocket-driver-0.9.1/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20261126-78490-omjet sitelibdir\=./.gem.20261126-78490-omjet clean

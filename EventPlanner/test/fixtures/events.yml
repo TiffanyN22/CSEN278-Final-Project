@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  description: MyText
+  date: 2026-11-26 23:40:31
+  location: MyString
+  preview_img: MyString
+  organizer: one
+  category: one
+
+two:
+  name: MyString
+  description: MyText
+  date: 2026-11-26 23:40:31
+  location: MyString
+  preview_img: MyString
+  organizer: two
+  category: two

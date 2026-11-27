@@ -1,0 +1,24 @@
+current directory: /Users/tiffanynguyen/Downloads/tagged/SCU/Fall 2026/CSEN 278/CSEN278-Final-Project/EventPlanner/vendor/bundle/ruby/4.0.0/gems/bootsnap-1.26.2/ext/bootsnap
+/opt/homebrew/opt/ruby/bin/ruby extconf.rb
+checking for fdatasync() in unistd.h... yes
+checking for fstatat() in sys/stat.h... yes
+checking for struct dirent.d_type in dirent.h... yes
+checking for whether -D_GNU_SOURCE is accepted as CPPFLAGS... yes
+checking for whether -O3 is accepted as CFLAGS... yes
+checking for whether -std=c99 is accepted as CFLAGS... yes
+creating Makefile
+
+current directory: /Users/tiffanynguyen/Downloads/tagged/SCU/Fall 2026/CSEN 278/CSEN278-Final-Project/EventPlanner/vendor/bundle/ruby/4.0.0/gems/bootsnap-1.26.2/ext/bootsnap
+make -j3 DESTDIR\= sitearchdir\=./.gem.20261126-78490-aag049 sitelibdir\=./.gem.20261126-78490-aag049 clean
+
+current directory: /Users/tiffanynguyen/Downloads/tagged/SCU/Fall 2026/CSEN 278/CSEN278-Final-Project/EventPlanner/vendor/bundle/ruby/4.0.0/gems/bootsnap-1.26.2/ext/bootsnap
+make -j3 DESTDIR\= sitearchdir\=./.gem.20261126-78490-aag049 sitelibdir\=./.gem.20261126-78490-aag049
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.bundle
+
+current directory: /Users/tiffanynguyen/Downloads/tagged/SCU/Fall 2026/CSEN 278/CSEN278-Final-Project/EventPlanner/vendor/bundle/ruby/4.0.0/gems/bootsnap-1.26.2/ext/bootsnap
+make -j3 DESTDIR\= sitearchdir\=./.gem.20261126-78490-aag049 sitelibdir\=./.gem.20261126-78490-aag049 install
+/usr/bin/install -c -m 0755 bootsnap.bundle ./.gem.20261126-78490-aag049/bootsnap
+
+current directory: /Users/tiffanynguyen/Downloads/tagged/SCU/Fall 2026/CSEN 278/CSEN278-Final-Project/EventPlanner/vendor/bundle/ruby/4.0.0/gems/bootsnap-1.26.2/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20261126-78490-aag049 sitelibdir\=./.gem.20261126-78490-aag049 clean

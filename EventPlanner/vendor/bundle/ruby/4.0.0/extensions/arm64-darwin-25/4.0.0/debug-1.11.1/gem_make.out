@@ -1,0 +1,19 @@
+current directory: /Users/tiffanynguyen/Downloads/tagged/SCU/Fall 2026/CSEN 278/CSEN278-Final-Project/EventPlanner/vendor/bundle/ruby/4.0.0/gems/debug-1.11.1/ext/debug
+/opt/homebrew/opt/ruby/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/tiffanynguyen/Downloads/tagged/SCU/Fall 2026/CSEN 278/CSEN278-Final-Project/EventPlanner/vendor/bundle/ruby/4.0.0/gems/debug-1.11.1/ext/debug
+make -j3 DESTDIR\= sitearchdir\=./.gem.20261126-78490-vj53n7 sitelibdir\=./.gem.20261126-78490-vj53n7 clean
+
+current directory: /Users/tiffanynguyen/Downloads/tagged/SCU/Fall 2026/CSEN 278/CSEN278-Final-Project/EventPlanner/vendor/bundle/ruby/4.0.0/gems/debug-1.11.1/ext/debug
+make -j3 DESTDIR\= sitearchdir\=./.gem.20261126-78490-vj53n7 sitelibdir\=./.gem.20261126-78490-vj53n7
+compiling debug.c
+compiling iseq_collector.c
+linking shared-object debug/debug.bundle
+
+current directory: /Users/tiffanynguyen/Downloads/tagged/SCU/Fall 2026/CSEN 278/CSEN278-Final-Project/EventPlanner/vendor/bundle/ruby/4.0.0/gems/debug-1.11.1/ext/debug
+make -j3 DESTDIR\= sitearchdir\=./.gem.20261126-78490-vj53n7 sitelibdir\=./.gem.20261126-78490-vj53n7 install
+/usr/bin/install -c -m 0755 debug.bundle ./.gem.20261126-78490-vj53n7/debug
+
+current directory: /Users/tiffanynguyen/Downloads/tagged/SCU/Fall 2026/CSEN 278/CSEN278-Final-Project/EventPlanner/vendor/bundle/ruby/4.0.0/gems/debug-1.11.1/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20261126-78490-vj53n7 sitelibdir\=./.gem.20261126-78490-vj53n7 clean

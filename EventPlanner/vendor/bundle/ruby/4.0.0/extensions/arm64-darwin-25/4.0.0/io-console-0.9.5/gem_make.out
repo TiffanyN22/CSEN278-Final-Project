@@ -1,0 +1,34 @@
+current directory: /Users/tiffanynguyen/Downloads/tagged/SCU/Fall 2026/CSEN 278/CSEN278-Final-Project/EventPlanner/vendor/bundle/ruby/4.0.0/gems/io-console-0.9.5/ext/io/console
+/opt/homebrew/opt/ruby/bin/ruby extconf.rb
+checking for rb_interned_str_cstr()... yes
+checking for rb_ractor_local_storage_value_newkey()... yes
+checking for rb_io_descriptor() in ruby/io.h... yes
+checking for rb_io_path() in ruby/io.h... yes
+checking for rb_io_closed_p() in ruby/io.h... yes
+checking for rb_io_open_descriptor() in ruby/io.h... yes
+checking for termios.h... yes
+checking for cfmakeraw() in termios.h... yes
+checking for sys/ioctl.h... yes
+checking for HAVE_RUBY_FIBER_SCHEDULER_H... yes
+checking for rb_category_warn()... yes
+checking for RB_WARN_CATEGORY_DEPRECATED... yes
+checking for ttyname_r()... yes
+checking for type of ttyname_r()... int
+checking for rb_prepend_module()... yes
+checking for gperf... yes
+creating Makefile
+
+current directory: /Users/tiffanynguyen/Downloads/tagged/SCU/Fall 2026/CSEN 278/CSEN278-Final-Project/EventPlanner/vendor/bundle/ruby/4.0.0/gems/io-console-0.9.5/ext/io/console
+make -j2 DESTDIR\= sitearchdir\=./.gem.20261126-78490-iwka2d sitelibdir\=./.gem.20261126-78490-iwka2d clean
+
+current directory: /Users/tiffanynguyen/Downloads/tagged/SCU/Fall 2026/CSEN 278/CSEN278-Final-Project/EventPlanner/vendor/bundle/ruby/4.0.0/gems/io-console-0.9.5/ext/io/console
+make -j2 DESTDIR\= sitearchdir\=./.gem.20261126-78490-iwka2d sitelibdir\=./.gem.20261126-78490-iwka2d
+compiling console.c
+linking shared-object io/console.bundle
+
+current directory: /Users/tiffanynguyen/Downloads/tagged/SCU/Fall 2026/CSEN 278/CSEN278-Final-Project/EventPlanner/vendor/bundle/ruby/4.0.0/gems/io-console-0.9.5/ext/io/console
+make -j2 DESTDIR\= sitearchdir\=./.gem.20261126-78490-iwka2d sitelibdir\=./.gem.20261126-78490-iwka2d install
+/usr/bin/install -c -m 0755 console.bundle ./.gem.20261126-78490-iwka2d/io
+
+current directory: /Users/tiffanynguyen/Downloads/tagged/SCU/Fall 2026/CSEN 278/CSEN278-Final-Project/EventPlanner/vendor/bundle/ruby/4.0.0/gems/io-console-0.9.5/ext/io/console
+make DESTDIR\= sitearchdir\=./.gem.20261126-78490-iwka2d sitelibdir\=./.gem.20261126-78490-iwka2d clean

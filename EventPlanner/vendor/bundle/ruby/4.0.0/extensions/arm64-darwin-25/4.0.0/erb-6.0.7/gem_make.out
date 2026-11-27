@@ -1,0 +1,19 @@
+current directory: /Users/tiffanynguyen/Downloads/tagged/SCU/Fall 2026/CSEN 278/CSEN278-Final-Project/EventPlanner/vendor/bundle/ruby/4.0.0/gems/erb-6.0.7/ext/erb/escape
+/opt/homebrew/opt/ruby/bin/ruby extconf.rb
+checking for rb_ext_ractor_safe() in ruby.h... yes
+creating Makefile
+
+current directory: /Users/tiffanynguyen/Downloads/tagged/SCU/Fall 2026/CSEN 278/CSEN278-Final-Project/EventPlanner/vendor/bundle/ruby/4.0.0/gems/erb-6.0.7/ext/erb/escape
+make DESTDIR\= sitearchdir\=./.gem.20261126-78490-ga0kzy sitelibdir\=./.gem.20261126-78490-ga0kzy clean
+
+current directory: /Users/tiffanynguyen/Downloads/tagged/SCU/Fall 2026/CSEN 278/CSEN278-Final-Project/EventPlanner/vendor/bundle/ruby/4.0.0/gems/erb-6.0.7/ext/erb/escape
+make DESTDIR\= sitearchdir\=./.gem.20261126-78490-ga0kzy sitelibdir\=./.gem.20261126-78490-ga0kzy
+compiling escape.c
+linking shared-object erb/escape.bundle
+
+current directory: /Users/tiffanynguyen/Downloads/tagged/SCU/Fall 2026/CSEN 278/CSEN278-Final-Project/EventPlanner/vendor/bundle/ruby/4.0.0/gems/erb-6.0.7/ext/erb/escape
+make DESTDIR\= sitearchdir\=./.gem.20261126-78490-ga0kzy sitelibdir\=./.gem.20261126-78490-ga0kzy install
+/usr/bin/install -c -m 0755 escape.bundle ./.gem.20261126-78490-ga0kzy/erb
+
+current directory: /Users/tiffanynguyen/Downloads/tagged/SCU/Fall 2026/CSEN 278/CSEN278-Final-Project/EventPlanner/vendor/bundle/ruby/4.0.0/gems/erb-6.0.7/ext/erb/escape
+make DESTDIR\= sitearchdir\=./.gem.20261126-78490-ga0kzy sitelibdir\=./.gem.20261126-78490-ga0kzy clean

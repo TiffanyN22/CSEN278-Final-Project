@@ -1,0 +1,18 @@
+current directory: /Users/tiffanynguyen/Downloads/tagged/SCU/Fall 2026/CSEN 278/CSEN278-Final-Project/EventPlanner/vendor/bundle/ruby/4.0.0/gems/racc-1.8.1/ext/racc/cparse
+/opt/homebrew/opt/ruby/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/tiffanynguyen/Downloads/tagged/SCU/Fall 2026/CSEN 278/CSEN278-Final-Project/EventPlanner/vendor/bundle/ruby/4.0.0/gems/racc-1.8.1/ext/racc/cparse
+make -j2 DESTDIR\= sitearchdir\=./.gem.20261126-78490-pej0v1 sitelibdir\=./.gem.20261126-78490-pej0v1 clean
+
+current directory: /Users/tiffanynguyen/Downloads/tagged/SCU/Fall 2026/CSEN 278/CSEN278-Final-Project/EventPlanner/vendor/bundle/ruby/4.0.0/gems/racc-1.8.1/ext/racc/cparse
+make -j2 DESTDIR\= sitearchdir\=./.gem.20261126-78490-pej0v1 sitelibdir\=./.gem.20261126-78490-pej0v1
+compiling cparse.c
+linking shared-object racc/cparse.bundle
+
+current directory: /Users/tiffanynguyen/Downloads/tagged/SCU/Fall 2026/CSEN 278/CSEN278-Final-Project/EventPlanner/vendor/bundle/ruby/4.0.0/gems/racc-1.8.1/ext/racc/cparse
+make -j2 DESTDIR\= sitearchdir\=./.gem.20261126-78490-pej0v1 sitelibdir\=./.gem.20261126-78490-pej0v1 install
+/usr/bin/install -c -m 0755 cparse.bundle ./.gem.20261126-78490-pej0v1/racc
+
+current directory: /Users/tiffanynguyen/Downloads/tagged/SCU/Fall 2026/CSEN 278/CSEN278-Final-Project/EventPlanner/vendor/bundle/ruby/4.0.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20261126-78490-pej0v1 sitelibdir\=./.gem.20261126-78490-pej0v1 clean
