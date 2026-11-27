@@ -1,6 +1,7 @@
 class RegistrationsController < ApplicationController
   before_action :set_registration, only: %i[ show edit update destroy ]
-
+  before_action :require_login
+  
   # GET /registrations or /registrations.json
   def index
     @registrations = Registration.all

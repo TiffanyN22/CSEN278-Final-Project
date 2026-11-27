@@ -1,9 +1,17 @@
 Rails.application.routes.draw do
+  get "sessions/new"
   resources :comments
   resources :registrations
   resources :events
   resources :categories
   resources :users
+
+  root "sessions#new" # make the log in page the default
+
+  # Authentication routes
+  get    "/login",  to: "sessions#new"
+  post   "/login",  to: "sessions#create"
+  delete "/logout", to: "sessions#destroy"
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
