@@ -1,7 +1,11 @@
 Rails.application.routes.draw do
   get "sessions/new"
   resources :comments
-  resources :registrations
+  resources :registrations do
+    member do
+      patch :cancel
+    end
+  end
   resources :events
   resources :categories
   resources :users

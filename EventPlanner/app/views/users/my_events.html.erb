@@ -23,7 +23,9 @@
   <% if @upcoming_registered_events.any? %>
     <% @upcoming_registered_events.each do |event| %>
       <%= render event %>
-      <div><%= link_to "Show this event", event %></div>
+      <% registration = current_user.active_registrations.find_by(event: event) %>
+      <div><%= link_to "Show this event", event %> </div>
+      <div> <%= button_to "Cancel Registration", cancel_registration_path(registration), method: :patch, data: { turbo_confirm: "Are you sure you want to cancel your registration?" } %> </div>
     <% end %>
   <% else %>
     <div>You aren't registered for any upcoming events.</div>

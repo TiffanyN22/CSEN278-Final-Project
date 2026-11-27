@@ -1,5 +1,5 @@
 class RegistrationsController < ApplicationController
-  before_action :set_registration, only: %i[ show edit update destroy ]
+  before_action :set_registration, only: %i[ show edit update destroy cancel ]
   before_action :require_login
   
   # GET /registrations or /registrations.json
@@ -51,6 +51,16 @@ class RegistrationsController < ApplicationController
     respond_to do |format|
       format.html { redirect_to registrations_path, notice: "Registration was successfully destroyed.", status: :see_other }
       format.json { head :no_content }
+    end
+  end
+
+  # PATCH /registrations/:id/cancel
+  def cancel
+    if @registration.user == current_user
+      @registration.update(cancelled: true)
+      redirect_to my_events_path, notice: "Registration cancelled."
+    else
+      redirect_to my_events_path, alert: "You are not authorized to cancel this registration."
     end
   end
 
